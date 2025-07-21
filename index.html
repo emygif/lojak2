@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/img/chifres-de-mao.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Loja</title>
+    <style>
+        .nav__login {
+            margin-top: 2rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            .nav__login {
+                margin-top: 0;
+                margin-left: 7.5rem;
+            }
+
+            .nav__menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="fi fi-sr-hand-horns"></i> D-DREAMS
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#story" class="nav__link">Novidade</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Destaque</a>
+                    </li>
+                     <li class="nav__item">
+            
+<li class="nav__item">
+    <a href="#" class="nav__link" onclick="toggleSubmenu(event)">Cadastro</a>
+    <ul id="cadastro-submenu" class="submenu" style="display: none;">
+        <li><a href="cadclientes-main/cadcli.html">Clientes</a></li>
+        <li><a href="cadprodutos-main/cadpro.html">Produtos</a></li>
+    </ul>
+</li>
+                </ul>
+            </div>
+                <div class="search-container">
+                
+                    <input type="text" id="search-bar" placeholder="Pesquisar..." oninput="searchFunction()">
+                    <div id="search-results" class="search-results"></div>
+                </div>
+
+                
+                <div class="nav__login">
+                    <a href="./login/login.html" class="button button--gray">Login</a>
+                </div>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag'></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+        <h2 class="cart__title-center">CARRINHO</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/slowdive.png" alt="" class="cart__img">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">SLOWDIVE SHIRT</h3>
+                    <span class="cart__price">$25</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box"><i class='bx bx-minus'></i></span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box"><i class='bx bx-plus'></i></span>
+                        </div>
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/slipknot.png" alt="" class="cart__img">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">SLIPKNOT</h3>
+                    <span class="cart__price">$30</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box"><i class='bx bx-minus'></i></span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box"><i class='bx bx-plus'></i></span>
+                        </div>
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item"></span>
+            <span class="cart__prices-total"></span>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__img-bg">
+                    <img src="assets/img/deftones.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">DISTORCED DREAMS <br> T-SHIRTS</h1>
+                    <p class="home__description" style="text-align: justify;">
+                        Explore a nossa coleção de t-shirts de bandas, onde música e moda se encontram. 
+                        Cada peça traz o estilo icônico de bandas lendárias, com estampas que capturam 
+                        a essência do rock, metal, indie, e muito mais. Celebre suas bandas favoritas
+                        e leve música para o seu guarda-roupa!
+                    </p>
+                    <span class="home__price">CONFIRA AGORA</span>
+                    <div class="home__btns">
+                        <a href="#featured" class="button button--gray button--small">EXPLORAR</a>
+                        <button class="button home__button">ADICIONAR AO CARRINHO</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br><br><br><br><br><br><br>
+
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <div class="item-resultado">           
+            </div>
+        </section>
+
+        <section class="story" id="story">
+            <style>
+                .story {
+                    position: relative;
+                    background-image: url('assets/img/op1.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    height: 100vh;
+                }
+
+                .story__container {
+                    position: relative;
+                    z-index: 1;
+                }
+            </style>
+            <div class="story__container container grid">
+                <div class="story__img-bg">
+                    <img src="" alt="" class="story__img">
+                </div>
+                <div class="story__data">
+                    <h1 class="story__title" style="text-align: justify;">NOVAS CAMISAS <br> THE SMITHS,<br> EDIÇÃO JULHO  2009</h1>
+                    <p class="story__description" style="text-align: justify;">
+                        "I LOVE THE SMITHS" <br> "WHAT?" <br> "I SAID I LOVE THE SMITHS"
+                    </p>
+                    <div class="story__btns">
+                        <a href="#featured" class="button button--gray button--small">CONFERIR</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br><br>
+
+        <section class="featured section container" id="featured">
+            <h2 class="section__title">
+                EM DESTAQUE
+            </h2>
+
+            <div class="featured__container grid">
+                <article class="featured__card">
+                    <span class="featured__tag">COMPRE</span>
+
+                    <img src="assets/img/slipknot.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">SLIPKNOT, 1999</h3>
+                        <span class="featured__price">$30</span>
+                    </div>
+
+                    <button class="button featured__button">ADICIONAR AO CARRINHO</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">COMPRE</span>
+
+                    <img src="assets/img/thecure.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">THE CURE, KISS ME</h3>
+                        <span class="featured__price">$15</span>
+                    </div>
+
+                    <button class="button featured__button">ADICIONAR AO CARRINHO</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">COMPRE</span>
+
+                    <img src="assets/img/slowdive.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">WHEN THE SUN HITS, SLOWDIVE</h3>
+                        <span class="featured__price">$20</span>
+                    </div>
+
+                    <button class="button featured__button">ADICIONAR AO CARRINHO</button>
+                </article>
+                <article class="featured__card">
+                    <span class="featured__tag">COMPRE</span>
+
+                    <img src="assets/img/tvgirl.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">SONG ABOUT ME TV GIRL</h3>
+                        <span class="featured__price">$50</span>
+                    </div>
+
+                    <button class="button featured__button">ADICIONAR AO CARRINHO</button>
+                </article>
+                <article class="featured__card">
+                    <span class="featured__tag">COMPRE</span>
+
+                    <img src="assets/img/the smiths.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">HATFUL OF HOLLOW</h3>
+                        <span class="featured__price">$45.99</span>
+                    </div>
+
+                    <button class="button featured__button">ADICIONAR AO CARRINHO</button>
+                </article>
+                <article class="featured__card">
+                    <span class="featured__tag">COMPRE</span>
+
+                    <img src="assets/img/deftones.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">BEWARE DEFTONES</h3>
+                        <span class="featured__price">$70</span>
+                    </div>
+
+                    <button class="button featured__button">ADICIONAR AO CARRINHO</button>
+                </article>
+            </div>
+        </section>
+
+
+
+    <a href="#featured" class="scrollup" id="scroll-up"> 
+        <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+    </a>
+
+
+
+
+    <script src="assets/js/main.js"></script>
+    <script>
+    function toggleSubmenu(event) {
+        event.preventDefault(); // impede o link de atualizar a página
+        const submenu = document.getElementById("cadastro-submenu");
+        const isVisible = submenu.style.display === "block";
+        submenu.style.display = isVisible ? "none" : "block";
+    }
+
+    // Fecha o submenu ao clicar fora
+    window.addEventListener("click", function (e) {
+        const submenu = document.getElementById("cadastro-submenu");
+        const trigger = document.querySelector('[onclick="toggleSubmenu(event)"]');
+
+        if (submenu && trigger && !submenu.contains(e.target) && !trigger.contains(e.target)) {
+            submenu.style.display = "none";
+        }
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), #145c3d);
+    color: #e0f2f1;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: rgba(255 255 255 / 0.05);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    max-width: 400px; 
+    padding: 20px 15px; 
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(32, 113, 75, 0.7);
+    transition: transform 0.3s ease;
+    margin: 40px auto;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+.section {
+    background: rgba(255 255 255 / 0.05);
+    border-radius: 16px;
+    padding: 15px; /* menos padding */
+    margin-bottom: 20px; /* menos margin */
+    border: 2px solid rgba(32, 113, 75, 0.7);
+    box-shadow: 0 4px 15px rgba(32, 113, 75, 0.3);
+}
+
+h1 {
+    font-size: 18px; /* menor fonte */
+    text-align: center;
+    margin-bottom: 20px; /* menos margin */
+    color: #d4f5e9;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px 14px; 
+    margin-bottom: 15px; 
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.76);
+    background: rgba(255 255 255 / 0.1);
+    color: #e0f2f1;
+    font-size: 12px; 
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+}
+
+input:focus {
+    background: rgba(255 255 255 / 0.2);
+    outline: none;
+    border-color: #fff;
+}
+
+button,
+input[type="submit"] {
+    width: 48%;
+    padding: 12px 0; 
+    border: none;
+    border-radius: 12px;
+    font-size: 12px; 
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(32, 113, 75, 0.7);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.btn-cadastrar {
+    background-color: rgba(32, 113, 75, 0.9);
+    margin-right: 4%;
+}
+
+.btn-cadastrar:hover {
+    background-color: #269a5e;
+    box-shadow: 0 6px 20px #1f7a4d;
+}
+
+.btn-buscar {
+    background-color: rgba(32, 113, 75, 0.9);
+}
+
+.btn-buscar:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-atualizar {
+    background-color: rgba(32, 113, 75, 0.9);
+    margin-left: 4%;
+}
+
+.btn-atualizar:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-deletar {
+    background-color: rgba(32, 113, 75, 0.6);
+    color: #fff;
+}
+
+.btn-deletar:hover {
+    background-color: rgba(32, 113, 75, 0.8);
+}
+
+.btn-limpar {
+    background-color: rgba(32, 113, 75, 0.9);
+}
+
+.btn-limpar:hover {
+    background-color: rgba(70, 70, 70, 0.9);
+}
+
+.action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px; /* menos margin */
+    justify-content: space-between;
+}
+
+.action-buttons button {
+    flex: 1 1 45%;
+}
+
+.nav-link {
+    text-align: center;
+    margin-top: 20px; /* menos margin */
+}
+
+.nav-link a {
+    color: #c0f0da;
+    font-weight: 600;
+    font-size: 12px; /* menor fonte */
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link a:hover {
+    color: #9ee0bc;
+    border-color: #9ee0bc;
+}
+
+#dadosCliente {
+    margin-top: 20px; /* menos margin */
+    padding-top: 20px; /* menos padding */
+    border-top: 2px dashed rgba(255 255 255 / 0.3);
+}
+
+@keyframes pop-in {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

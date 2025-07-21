@@ -1,0 +1,131 @@
+/* Fonte estilizada */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+/* Reset básico e corpo */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), #145c3d);
+    color: #e0f2f1;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container central */
+.container {
+    background: rgba(255 255 255 / 0.05);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    max-width: 480px;
+    padding: 30px 25px;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(32, 113, 75, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Seção */
+.section {
+    margin-bottom: 30px;
+}
+
+/* Título */
+h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d4f5e9;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 2px solid rgba(255 255 255 / 0.3);
+    background: rgba(255 255 255 / 0.1);
+    color: #e0f2f1;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    background: rgba(255 255 255 / 0.2);
+    border-color: #fff;
+}
+
+/* Botões */
+button {
+    width: 48%;
+    padding: 14px 0;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(32, 113, 75, 0.7);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Botões específicos */
+.btn-cadastrar {
+    background-color: rgba(32, 113, 75, 0.9);
+    margin-right: 4%;
+}
+
+.btn-cadastrar:hover {
+    background-color: #269a5e;
+    box-shadow: 0 6px 20px #1f7a4d;
+}
+
+.btn-limpar {
+    background-color: rgba(50, 50, 50, 0.7);
+}
+
+.btn-limpar:hover {
+    background-color: rgba(70, 70, 70, 0.9);
+}
+
+/* Área dos botões */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Link estilizado */
+.nav-link {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.nav-link a {
+    color: #c0f0da;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link a:hover {
+    color: #9ee0bc;
+    border-color: #9ee0bc;
+}
