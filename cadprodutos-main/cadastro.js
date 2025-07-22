@@ -2,13 +2,14 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/fireba
 import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-database.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAOb0fi4skGdmcGA68D2TFwiYuDlxGCaXM",
-    authDomain: "loja-de-livros-8b465.firebaseapp.com",
-    projectId: "loja-de-livros-8b465",
-    storageBucket: "loja-de-livros-8b465.firebasestorage.app",
-    messagingSenderId: "556264075539",
-    appId: "1:556264075539:web:491c9995df97543be3eae6",
-    measurementId: "G-Z96DPZ4H1J"
+  apiKey: "AIzaSyBgb-_Ug56E649mA6BAAPBt5WKgCSdYtzo",
+  authDomain: "d-dreams-8c7b9.firebaseapp.com",
+  databaseURL: "https://d-dreams-8c7b9-default-rtdb.firebaseio.com",
+  projectId: "d-dreams-8c7b9",
+  storageBucket: "d-dreams-8c7b9.firebasestorage.app",
+  messagingSenderId: "636660806955",
+  appId: "1:636660806955:web:415d7930b34934e8f0416e",
+  measurementId: "G-NTERVE2MEX"
 };
 
 const app = initializeApp(firebaseConfig);
