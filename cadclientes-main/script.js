@@ -3,13 +3,14 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/fireba
 import { getDatabase, ref, set, get, update, remove } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-database.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA8DJVJQlcXl3tocBZDaDkN4SyPGMhbuwA",
-    authDomain: "carlosesse-4a9d1.firebaseapp.com",
-    databaseURL: "https://carlosesse-4a9d1-default-rtdb.firebaseio.com",
-    projectId: "carlosesse-4a9d1",
-    storageBucket: "carlosesse-4a9d1.firebasestorage.app",
-    messagingSenderId: "69265719612",
-    appId: "1:69265719612:web:430330d8b012e2ba969e39"
+  apiKey: "AIzaSyBgb-_Ug56E649mA6BAAPBt5WKgCSdYtzo",
+  authDomain: "d-dreams-8c7b9.firebaseapp.com",
+  databaseURL: "https://d-dreams-8c7b9-default-rtdb.firebaseio.com",
+  projectId: "d-dreams-8c7b9",
+  storageBucket: "d-dreams-8c7b9.firebasestorage.app",
+  messagingSenderId: "636660806955",
+  appId: "1:636660806955:web:415d7930b34934e8f0416e",
+  measurementId: "G-NTERVE2MEX"
   };
 
 
